@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Our Team</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Meet Our Team</h1>
+      <p>
+        We are a creative and passionate group dedicated to delivering
+        exceptional digital experiences.
+      </p>
+    </section>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button onclick="filterTeam('All')">All</button>
+      <button onclick="filterTeam('Frontend')">Frontend</button>
+      <button onclick="filterTeam('UIUX')">UI/UX</button>
+      <button onclick="filterTeam('FullStack')">Full Stack</button>
+      <button onclick="filterTeam('Manager')">Manager</button>
+    </div>
+
+    <!-- Team Grid -->
+    <section class="team-grid">
+      <div class="card-wrapper">
+        <div class="team-card" data-role="Frontend">
+          <img
+            src="https://randomuser.me/api/portraits/men/32.jpg"
+            class="card-img-top"
+            alt="Hassan Raza"
+          />
+
+          <div class="card-body">
+            <h3>Hassan Raza</h3>
+            <p>Frontend Developer</p>
+            <p>Specializes in React.js and modern UI implementation.</p>
+            <button class="view-btn" onclick="viewCard(this)">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="team-card" data-role="UIUX">
+          <img
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2"
+            class="card-img-top"
+            alt="Ayesha Khan"
+          />
+
+          <div class="card-body">
+            <h3>Ayesha Khan</h3>
+            <p>UI/UX Designer</p>
+            <p>Designs intuitive and user-friendly interfaces.</p>
+            <button class="view-btn" onclick="viewCard(this)">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="team-card" data-role="FullStack">
+          <img
+            src="https://images.unsplash.com/photo-1552058544-f2b08422138a"
+            class="card-img-top"
+            alt="Ali Zafar"
+          />
+
+          <div class="card-body">
+            <h3>Ali Zafar</h3>
+            <p>Full Stack Developer</p>
+            <p>Expert in MERN stack and scalable APIs.</p>
+            <button class="view-btn" onclick="viewCard(this)">View</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="team-card" data-role="Manager">
+          <img
+            src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+            class="card-img-top"
+            alt="Maria Shah"
+          />
+
+          <div class="card-body">
+            <h3>Maria Shah</h3>
+            <p>Project Manager</p>
+            <p>Leads cross-functional teams with efficiency.</p>
+            <button class="view-btn" onclick="viewCard(this)">View</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
